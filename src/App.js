@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import MainComponent from "./components/MainComponent/MainComponent";
-import { img, logo } from "./images";
+import { bg, img, logo } from "./images";
 
 function App() {
   const [allData, setAllData] = useState({
@@ -11,7 +11,8 @@ function App() {
     primaryColor: "#F72585",
     secondaryColor: "#3A0CA3",
     accentColor: "#fff",
-    heading: "Now <br/> hiring",
+    heading: "Now  hiring",
+    headingBg: bg,
     postDetails: {
       postName: "Graphic  Designer",
       info: "Join our creative team and be part of our story",

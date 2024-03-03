@@ -3,7 +3,7 @@ import classes from "./MainComponent.module.css";
 
 const MainComponent = ({
   img,
-
+  headingBg,
   logo,
   heading,
   postDetails,
@@ -24,10 +24,10 @@ const MainComponent = ({
         </div>
         <div className={classes.wrapper}>
           <div className={classes.infoContainer}>
-            <h1
-              className={classes.heading}
-              dangerouslySetInnerHTML={{ __html: heading }}
-            ></h1>{" "}
+            <h1 className={classes.heading}>
+              {heading}
+              <img src={headingBg} alt="#" className={classes.headingBg} />
+            </h1>{" "}
             <div className={classes.postDetails}>
               <h2 className={classes.postName}>{postDetails.postName}</h2>
               <p className={classes.info}>{postDetails.info}</p>
@@ -43,7 +43,8 @@ const MainComponent = ({
             {applyNow.email}
           </a>
         </div>
-      </div>
+      </div>{" "}
+      <img src={headingBg} alt="#" className={classes.bottomBg} />
     </div>
   );
 };

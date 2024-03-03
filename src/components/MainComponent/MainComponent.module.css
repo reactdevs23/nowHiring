@@ -9,7 +9,13 @@
   position: relative;
   z-index: 1;
 }
-
+.bottomBg {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(40%, 30%);
+  z-index: -1;
+}
 .container {
   display: flex;
   flex-direction: column;
@@ -39,6 +45,7 @@
   align-items: center;
   gap: 18px;
 }
+
 .infoContainer {
   display: flex;
   flex-direction: column;
@@ -53,6 +60,16 @@
   line-height: 90%;
   color: var(--secondaryColor);
   text-transform: capitalize;
+  position: relative;
+  z-index: 1;
+  padding: 25px 0;
+}
+.headingBg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
 }
 .postDetails {
   display: flex;
