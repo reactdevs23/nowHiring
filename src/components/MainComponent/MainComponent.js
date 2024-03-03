@@ -26,7 +26,7 @@ const MainComponent = ({
           <div className={classes.infoContainer}>
             <h1 className={classes.heading}>
               {heading}
-              <img src={headingBg} alt="#" className={classes.headingBg} />
+              <div className={classes.headingBg}>{headingBg}</div>
             </h1>{" "}
             <div className={classes.postDetails}>
               <h2 className={classes.postName}>{postDetails.postName}</h2>
@@ -44,7 +44,7 @@ const MainComponent = ({
           </a>
         </div>
       </div>{" "}
-      <img src={headingBg} alt="#" className={classes.bottomBg} />
+      <div className={classes.bottomBg}>{headingBg}</div>
     </div>
   );
 };
