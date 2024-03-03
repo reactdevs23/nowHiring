@@ -1,0 +1,112 @@
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: start;
+
+  padding: 24px 0;
+  padding-bottom: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 991px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+.topHeader {
+  display: flex;
+  width: 100%;
+  gap: 5px;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  align-items: center;
+  gap: 18px;
+}
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 50px;
+  max-width: 300px;
+}
+
+.heading {
+  font-size: 100px;
+  font-weight: 700;
+  line-height: 90%;
+  color: var(--secondaryColor);
+  text-transform: capitalize;
+}
+.postDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.postName {
+  color: var(--accentColor);
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 110%;
+}
+.info {
+  color: var(--accentColor);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 120%;
+  max-width: 200px;
+  opacity: 0.9;
+}
+.searchIcon {
+  max-width: 20px;
+}
+
+.applyNow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+.label {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 90%;
+  color: var(--accentColor);
+  background: var(--secondaryColor);
+  border-radius: 18px;
+  padding: 12px 25px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.email {
+  color: var(--accentColor);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 120%;
+  opacity: 0.9;
+}
+.imgContainer .img {
+  width: 100%;
+
+  max-width: 400px;
+  z-index: 1;
+}
